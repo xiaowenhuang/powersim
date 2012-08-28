@@ -6,7 +6,7 @@
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
   :key         => '_powersiom_session',
-  :secret      => '7fa841095ada7a3939ac4c39565c3fdce1b05cff215fdc1ca2a75c21f865264e2bf868bb6b95185821040ff0abe0f5ca717ad66b6036c72dc5d079b90ecc7863'
+  :secret      => '872c7e61793902eb3472928fbf17739cbf4a1f03ff8c868f1e2b31b175dd9b26a64a2f20bd270565ad636c25310cc1f75ab2c0c84586f65caaf1ddc0fa88313d'
 }
 
 # Use the database for sessions instead of the cookie-based default,
