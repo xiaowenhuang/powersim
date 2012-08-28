@@ -1,0 +1,1123 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (132.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (534.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePharmacies (20120828031017)
+  [4;36;1mSQL (129.0ms)[0m   [0;1mCREATE TABLE `pharmacies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `address` text, `operator` varchar(255), `phone` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (95.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120828031017')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `pharmacies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `pharmacies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-08-28 11:23:33) [GET]
+
+ActionController::RoutingError (No route matches "/pharmacy" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:24:11) [GET]
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 1844ms (View: 1837, DB: 1) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 11:24:37) [GET]
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 21ms (View: 11, DB: 4) | 200 OK [http://localhost/pharmacies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:25:33) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:28:22) [GET]
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:29:06) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:29:28) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:30:44) [GET]
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:31:12) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 11:31:14) [GET]
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 18ms (View: 7, DB: 4) | 200 OK [http://localhost/pharmacies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:34:38) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 11:36:01) [GET]
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 19ms (View: 10, DB: 4) | 200 OK [http://localhost/pharmacies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 11:38:00) [GET]
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/pharmacies/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#create (for 127.0.0.1 at 2012-08-28 11:39:01) [POST]
+  Parameters: {"pharmacy"=>{"title"=>"广州市民益堂贸易有限公司绿荫分店", "operator"=>"黄小文", "phone"=>"空", "address"=>"空"}, "commit"=>"添加", "authenticity_token"=>"fG29o9RYWO7Kp6X0NWj50gDuzjYrP3/2RkrF1S9+7Aw="}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPharmacy Create (0.0ms)[0m   [0;1mINSERT INTO `pharmacies` (`updated_at`, `title`, `operator`, `phone`, `address`, `created_at`) VALUES('2012-08-28 03:39:01', '广州市民益堂贸易有限公司绿荫分店', '黄小文', '空', '空', '2012-08-28 03:39:01')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/1
+Completed in 112ms (DB: 99) | 302 Found [http://localhost/pharmacies]
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:39:08) [GET]
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 11:40:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mPharmacy Load (2.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 24ms (View: 12, DB: 6) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 11:40:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 19ms (View: 8, DB: 4) | 200 OK [http://localhost/pharmacies/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:40:57) [GET]
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 17ms (View: 7, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 11:43:35) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 19ms (View: 10, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePharmacies (20120828031017)
+Migrating to AddReasontimeToPharmacy (20120828035224)
+  [4;36;1mSQL (541.0ms)[0m   [0;1mALTER TABLE `pharmacies` ADD `reason` text[0m
+  [4;35;1mSQL (571.0ms)[0m   [0mALTER TABLE `pharmacies` ADD `begin_date` date[0m
+  [4;36;1mSQL (572.0ms)[0m   [0;1mALTER TABLE `pharmacies` ADD `end_date` date[0m
+  [4;35;1mSQL (136.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120828035224')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `pharmacies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `pharmacies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 12:00:15) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+
+ActionView::TemplateError (undefined method `end' for #<Pharmacy:0x50a8804>) on line #20 of app/views/pharmacies/index.html.erb:
+17:     <td><%=h pharmacy.reason %></td>
+18:     <td><%=h pharmacy.operator %></td>
+19: 	<td><%=h pharmacy.begin_date %></td>
+20: 	<td><%=h pharmacy.end._date%></td>
+21:     <td><%=h pharmacy.phone %></td>
+22: 	<td><%=h pharmacy.address %></td>
+23:     <td><%= link_to '详细', pharmacy %></td>
+
+    app/views/pharmacies/index.html.erb:20
+    app/views/pharmacies/index.html.erb:14:in `each'
+    app/views/pharmacies/index.html.erb:14
+    app/controllers/pharmacies_controller.rb:7:in `index'
+
+Rendered rescues/_trace (136.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 12:00:17) [GET]
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+
+ActionView::TemplateError (undefined method `end' for #<Pharmacy:0x896f82c>) on line #20 of app/views/pharmacies/index.html.erb:
+17:     <td><%=h pharmacy.reason %></td>
+18:     <td><%=h pharmacy.operator %></td>
+19: 	<td><%=h pharmacy.begin_date %></td>
+20: 	<td><%=h pharmacy.end._date%></td>
+21:     <td><%=h pharmacy.phone %></td>
+22: 	<td><%=h pharmacy.address %></td>
+23:     <td><%= link_to '详细', pharmacy %></td>
+
+    app/views/pharmacies/index.html.erb:20
+    app/views/pharmacies/index.html.erb:14:in `each'
+    app/views/pharmacies/index.html.erb:14
+    app/controllers/pharmacies_controller.rb:7:in `index'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 12:00:21) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+
+ActionView::TemplateError (undefined method `end' for #<Pharmacy:0x8858894>) on line #20 of app/views/pharmacies/index.html.erb:
+17:     <td><%=h pharmacy.reason %></td>
+18:     <td><%=h pharmacy.operator %></td>
+19: 	<td><%=h pharmacy.begin_date %></td>
+20: 	<td><%=h pharmacy.end._date%></td>
+21:     <td><%=h pharmacy.phone %></td>
+22: 	<td><%=h pharmacy.address %></td>
+23:     <td><%= link_to '详细', pharmacy %></td>
+
+    app/views/pharmacies/index.html.erb:20
+    app/views/pharmacies/index.html.erb:14:in `each'
+    app/views/pharmacies/index.html.erb:14
+    app/controllers/pharmacies_controller.rb:7:in `index'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 12:00:54) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 14:30:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (18.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 34ms (View: 7, DB: 20) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 14:39:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 24ms (View: 14, DB: 6) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 15:49:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 67ms (View: 54, DB: 4) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 15:49:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 19ms (View: 9, DB: 4) | 200 OK [http://localhost/pharmacies/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 15:49:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 18ms (View: 7, DB: 3) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 15:50:52) [GET]
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 19ms (View: 7, DB: 5) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 15:58:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 25ms (View: 13, DB: 5) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#update (for 127.0.0.1 at 2012-08-28 15:59:11) [PUT]
+  Parameters: {"pharmacy"=>{"end_date"=>"2012-8-24", "title"=>"广州市民益堂贸易有限公司绿荫分店", "operator"=>"黄小文", "phone"=>"空", "begin_date"=>"2012-8-24", "reason"=>"", "address"=>"空"}, "commit"=>"更新", "authenticity_token"=>"fG29o9RYWO7Kp6X0NWj50gDuzjYrP3/2RkrF1S9+7Aw=", "id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPharmacy Update (23.0ms)[0m   [0mUPDATE `pharmacies` SET `end_date` = '2012-08-24', `reason` = '', `updated_at` = '2012-08-28 07:59:11', `begin_date` = '2012-08-24' WHERE `id` = 1[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/1
+Completed in 132ms (DB: 118) | 302 Found [http://localhost/pharmacies/1]
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 15:59:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/pharmacies/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 15:59:20) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 18ms (View: 7, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 15:59:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 22ms (View: 8, DB: 7) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#update (for 127.0.0.1 at 2012-08-28 15:59:47) [PUT]
+  Parameters: {"pharmacy"=>{"end_date"=>"2012-08-25", "title"=>"广州市民益堂贸易有限公司绿荫分店", "operator"=>"黄小文", "phone"=>"空", "begin_date"=>"2012-08-24", "reason"=>"", "address"=>"空"}, "commit"=>"更新", "authenticity_token"=>"fG29o9RYWO7Kp6X0NWj50gDuzjYrP3/2RkrF1S9+7Aw=", "id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPharmacy Update (0.0ms)[0m   [0mUPDATE `pharmacies` SET `end_date` = '2012-08-25', `updated_at` = '2012-08-28 07:59:47' WHERE `id` = 1[0m
+  [4;36;1mSQL (135.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/1
+Completed in 153ms (DB: 139) | 302 Found [http://localhost/pharmacies/1]
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 16:00:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/pharmacies/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 16:00:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 17ms (View: 7, DB: 4) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#update (for 127.0.0.1 at 2012-08-28 16:00:13) [PUT]
+  Parameters: {"pharmacy"=>{"end_date"=>"2012-08-24", "title"=>"广州市民益堂贸易有限公司绿荫分店", "operator"=>"黄小文", "phone"=>"空", "begin_date"=>"2012-08-24", "reason"=>"", "address"=>"空"}, "commit"=>"更新", "authenticity_token"=>"fG29o9RYWO7Kp6X0NWj50gDuzjYrP3/2RkrF1S9+7Aw=", "id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPharmacy Update (0.0ms)[0m   [0mUPDATE `pharmacies` SET `end_date` = '2012-08-24', `updated_at` = '2012-08-28 08:00:13' WHERE `id` = 1[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/1
+Completed in 110ms (DB: 96) | 302 Found [http://localhost/pharmacies/1]
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 16:00:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/pharmacies/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 16:00:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (3.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 19ms (View: 5, DB: 7) | 200 OK [http://localhost/pharmacies/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 16:00:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (2.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 19ms (View: 8, DB: 5) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#update (for 127.0.0.1 at 2012-08-28 16:00:32) [PUT]
+  Parameters: {"pharmacy"=>{"end_date"=>"2012-08-25", "title"=>"广州市民益堂贸易有限公司绿荫分店", "operator"=>"黄小文", "phone"=>"空", "begin_date"=>"2012-08-24", "reason"=>"", "address"=>"空"}, "commit"=>"更新", "authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE=", "id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPharmacy Update (0.0ms)[0m   [0mUPDATE `pharmacies` SET `end_date` = '2012-08-25', `updated_at` = '2012-08-28 08:00:32' WHERE `id` = 1[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/1
+Completed in 101ms (DB: 87) | 302 Found [http://localhost/pharmacies/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 16:00:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 17ms (View: 4, DB: 6) | 200 OK [http://localhost/pharmacies/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:00:45) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 18ms (View: 8, DB: 4) | 200 OK [http://localhost/pharmacies]
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:00:45) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 16:00:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 16ms (View: 7, DB: 4) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#update (for 127.0.0.1 at 2012-08-28 16:00:58) [PUT]
+  Parameters: {"pharmacy"=>{"end_date"=>"2012-08-25", "title"=>"广州市民益堂贸易有限公司绿荫分店", "operator"=>"黄小文", "phone"=>"空", "begin_date"=>"2012-08-24", "reason"=>"", "address"=>"空"}, "commit"=>"更新", "authenticity_token"=>"fG29o9RYWO7Kp6X0NWj50gDuzjYrP3/2RkrF1S9+7Aw=", "id"=>"1"}
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/1
+Completed in 17ms (DB: 6) | 302 Found [http://localhost/pharmacies/1]
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 16:01:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/pharmacies/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 16:01:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 22ms (View: 8, DB: 6) | 200 OK [http://localhost/pharmacies/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#update (for 127.0.0.1 at 2012-08-28 16:01:24) [PUT]
+  Parameters: {"pharmacy"=>{"end_date"=>"2012-08-24", "title"=>"广州市民益堂贸易有限公司绿荫分店", "operator"=>"黄小文", "phone"=>"空", "begin_date"=>"2012-08-24", "reason"=>"", "address"=>"空"}, "commit"=>"更新", "authenticity_token"=>"fG29o9RYWO7Kp6X0NWj50gDuzjYrP3/2RkrF1S9+7Aw=", "id"=>"1"}
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPharmacy Update (0.0ms)[0m   [0;1mUPDATE `pharmacies` SET `end_date` = '2012-08-24', `updated_at` = '2012-08-28 08:01:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (95.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/1
+Completed in 113ms (DB: 98) | 302 Found [http://localhost/pharmacies/1]
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 16:01:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/pharmacies/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:01:30) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:03:06) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 66ms (View: 57, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:03:31) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:03:44) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 22ms (View: 11, DB: 5) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:04:42) [GET]
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 22ms (View: 11, DB: 6) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:48:35) [GET]
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 20ms (View: 8, DB: 6) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:48:42) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 17ms (View: 6, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:50:15) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 15ms (View: 6, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:51:07) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 62ms (View: 52, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:51:35) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 18ms (View: 6, DB: 5) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:51:53) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 16ms (View: 8, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:52:07) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 16ms (View: 7, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:52:23) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 22ms (View: 12, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 16:54:07) [GET]
+  [4;35;1mPharmacy Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 31ms (View: 19, DB: 5) | 200 OK [http://localhost/pharmacies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 16:55:03) [GET]
+  [4;36;1mPharmacy Columns (22.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 38ms (View: 11, DB: 22) | 200 OK [http://localhost/pharmacies/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 16:57:59) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 22ms (View: 7, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 16:59:16) [GET]
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://localhost/pharmacies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#create (for 127.0.0.1 at 2012-08-28 16:59:56) [POST]
+  Parameters: {"pharmacy"=>{"end_date"=>"2012-8-24", "title"=>"广州市黄埔区德仁药店", "operator"=>"黄小文", "phone"=>"空", "begin_date"=>"2012-8-24", "reason"=>"保达重装后医保用不了。\r\n", "address"=>"空"}, "commit"=>"添加", "authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE="}
+  [4;36;1mPharmacy Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPharmacy Create (0.0ms)[0m   [0;1mINSERT INTO `pharmacies` (`end_date`, `updated_at`, `title`, `operator`, `phone`, `reason`, `begin_date`, `address`, `created_at`) VALUES('2012-08-24', '2012-08-28 08:59:56', '广州市黄埔区德仁药店', '黄小文', '空', '保达重装后医保用不了。\r\n', '2012-08-24', '空', '2012-08-28 08:59:56')[0m
+  [4;35;1mSQL (92.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/2
+Completed in 153ms (DB: 94) | 302 Found [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:03:41) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 147ms (View: 137, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 17:05:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 2) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 50ms (View: 40, DB: 4) | 200 OK [http://localhost/pharmacies/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:05:52) [GET]
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 18ms (View: 9, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 17:05:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 2) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 14ms (View: 4, DB: 6) | 200 OK [http://localhost/pharmacies/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 17:05:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 2) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 21ms (View: 12, DB: 3) | 200 OK [http://localhost/pharmacies/2/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#update (for 127.0.0.1 at 2012-08-28 17:05:59) [PUT]
+  Parameters: {"pharmacy"=>{"end_date"=>"2012-08-24", "title"=>"广州市黄埔区德仁药店", "operator"=>"黄小文", "phone"=>"空", "begin_date"=>"2012-08-24", "reason"=>"保达重装后医保用不了。\r\n", "address"=>"空"}, "commit"=>"更新", "authenticity_token"=>"fG29o9RYWO7Kp6X0NWj50gDuzjYrP3/2RkrF1S9+7Aw=", "id"=>"2"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/2
+Completed in 14ms (DB: 4) | 302 Found [http://localhost/pharmacies/2]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 17:05:59) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 2) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 14ms (View: 4, DB: 5) | 200 OK [http://localhost/pharmacies/2]
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 17:06:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 2) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/pharmacies/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:06:04) [GET]
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 18ms (View: 10, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:07:18) [GET]
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;36;1mPharmacy Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 19ms (View: 9, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 17:07:23) [GET]
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 26ms (View: 14, DB: 5) | 200 OK [http://localhost/pharmacies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#create (for 127.0.0.1 at 2012-08-28 17:07:41) [POST]
+  Parameters: {"pharmacy"=>{"end_date"=>"在", "title"=>"唇形", "operator"=>"厅", "phone"=>"在", "begin_date"=>"要", "reason"=>"唇形", "address"=>"地"}, "commit"=>"添加", "authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE="}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPharmacy Create (1.0ms)[0m   [0;1mINSERT INTO `pharmacies` (`end_date`, `updated_at`, `title`, `operator`, `phone`, `reason`, `begin_date`, `address`, `created_at`) VALUES(NULL, '2012-08-28 09:07:41', '唇形', '厅', '在', '唇形', NULL, '地', '2012-08-28 09:07:41')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies/3
+Completed in 114ms (DB: 98) | 302 Found [http://localhost/pharmacies]
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:07:41) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#destroy (for 127.0.0.1 at 2012-08-28 17:07:49) [DELETE]
+  Parameters: {"authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE=", "id"=>"3"}
+  [4;35;1mPharmacy Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mPharmacy Load (2.0ms)[0m   [0;1mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 3) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mPharmacy Destroy (0.0ms)[0m   [0;1mDELETE FROM `pharmacies` WHERE `id` = 3[0m
+  [4;35;1mSQL (121.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/pharmacies
+Completed in 140ms (DB: 129) | 302 Found [http://localhost/pharmacies/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:07:49) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 18ms (View: 10, DB: 3) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 17:08:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 1) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 18ms (View: 5, DB: 4) | 200 OK [http://localhost/pharmacies/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:08:40) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 19ms (View: 9, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 17:11:50) [GET]
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 19ms (View: 8, DB: 4) | 200 OK [http://localhost/pharmacies/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#create (for 127.0.0.1 at 2012-08-28 17:11:54) [POST]
+  Parameters: {"pharmacy"=>{"end_date"=>"", "title"=>"要", "operator"=>"", "phone"=>"", "begin_date"=>"", "reason"=>"", "address"=>""}, "commit"=>"添加", "authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE="}
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 33ms (View: 16, DB: 6) | 200 OK [http://localhost/pharmacies]
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:12:06) [GET]
+  [4;36;1mPharmacy Load (1.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 17:12:10) [GET]
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 20ms (View: 9, DB: 4) | 200 OK [http://localhost/pharmacies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#create (for 127.0.0.1 at 2012-08-28 17:12:12) [POST]
+  Parameters: {"pharmacy"=>{"end_date"=>"", "title"=>"", "operator"=>"", "phone"=>"", "begin_date"=>"", "reason"=>"", "address"=>""}, "commit"=>"添加", "authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE="}
+  [4;36;1mPharmacy Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 31ms (View: 16, DB: 6) | 200 OK [http://localhost/pharmacies]
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:12:12) [GET]
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 17:12:15) [GET]
+  [4;36;1mPharmacy Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 21ms (View: 9, DB: 6) | 200 OK [http://localhost/pharmacies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#create (for 127.0.0.1 at 2012-08-28 17:12:17) [POST]
+  Parameters: {"pharmacy"=>{"end_date"=>"", "title"=>"", "operator"=>"", "phone"=>"", "begin_date"=>"", "reason"=>"", "address"=>""}, "commit"=>"添加", "authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE="}
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 29ms (View: 13, DB: 6) | 200 OK [http://localhost/pharmacies]
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:13:56) [GET]
+  [4;36;1mPharmacy Load (5.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 14ms (View: 8, DB: 5) | 200 OK [http://localhost/pharmacies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 17:13:58) [GET]
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 19ms (View: 8, DB: 3) | 200 OK [http://localhost/pharmacies/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#create (for 127.0.0.1 at 2012-08-28 17:14:04) [POST]
+  Parameters: {"pharmacy"=>{"end_date"=>"", "title"=>"", "operator"=>"要", "phone"=>"", "begin_date"=>"在", "reason"=>"顶戴", "address"=>""}, "commit"=>"添加", "authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE="}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 26ms (View: 11, DB: 5) | 200 OK [http://localhost/pharmacies]
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:14:04) [GET]
+  [4;35;1mPharmacy Load (0.0ms)[0m   [0mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#show (for 127.0.0.1 at 2012-08-28 17:25:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPharmacy Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (2.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 2) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/show
+Completed in 19ms (View: 5, DB: 7) | 200 OK [http://localhost/pharmacies/2]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#edit (for 127.0.0.1 at 2012-08-28 17:25:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+  [4;35;1mPharmacy Load (1.0ms)[0m   [0mSELECT * FROM `pharmacies` WHERE (`pharmacies`.`id` = 2) [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/edit
+Completed in 19ms (View: 8, DB: 5) | 200 OK [http://localhost/pharmacies/2/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:25:21) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+  [4;35;1mPharmacy Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+Completed in 24ms (View: 13, DB: 4) | 200 OK [http://localhost/pharmacies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#new (for 127.0.0.1 at 2012-08-28 17:25:23) [GET]
+  [4;36;1mPharmacy Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `pharmacies`[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://localhost/pharmacies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PharmaciesController#create (for 127.0.0.1 at 2012-08-28 17:25:25) [POST]
+  Parameters: {"pharmacy"=>{"end_date"=>"", "title"=>"", "operator"=>"", "phone"=>"", "begin_date"=>"", "reason"=>"", "address"=>""}, "commit"=>"添加", "authenticity_token"=>"qkiP/A0Os+lzTXdf8ho9iogYFDu5Ws/L9G9aYRbQ6iE="}
+  [4;35;1mPharmacy Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `pharmacies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/new
+Completed in 32ms (View: 14, DB: 4) | 200 OK [http://localhost/pharmacies]
+
+
+Processing PharmaciesController#index (for 127.0.0.1 at 2012-08-28 17:32:27) [GET]
+  [4;36;1mPharmacy Load (0.0ms)[0m   [0;1mSELECT * FROM `pharmacies` [0m
+Rendering template within layouts/pharmacies
+Rendering pharmacies/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/pharmacies]
