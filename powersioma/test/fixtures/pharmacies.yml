@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  reason: 
+  begin_date: MyString
+  end_date: MyString
+  phone: MyString
+  address: MyString
+
+two:
+  name: MyString
+  reason: 
+  begin_date: MyString
+  end_date: MyString
+  phone: MyString
+  address: MyString
