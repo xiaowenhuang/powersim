@@ -1,13 +1,13 @@
-<h1>Listing pharmacies</h1>
+<h1>运维主页</h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Reason</th>
-    <th>Begin date</th>
-    <th>End date</th>
-    <th>Phone</th>
-    <th>Address</th>
+    <th>药店名称</th>
+    <th>原因</th>
+    <th>受理日期</th>
+    <th>终结日期</th>
+    <th>联系电话、QQ</th>
+    <th>联系地址</th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,13 +21,13 @@
     <td><%= pharmacy.end_date %></td>
     <td><%= pharmacy.phone %></td>
     <td><%= pharmacy.address %></td>
-    <td><%= link_to 'Show', pharmacy %></td>
-    <td><%= link_to 'Edit', edit_pharmacy_path(pharmacy) %></td>
-    <td><%= link_to 'Destroy', pharmacy, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to '显示', pharmacy %></td>
+    <td><%= link_to '修改', edit_pharmacy_path(pharmacy) %></td>
+    <td><%= link_to '删除', pharmacy, :confirm => '你确定吗?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Pharmacy', new_pharmacy_path %>
+<%= link_to '新增运维', new_pharmacy_path %>

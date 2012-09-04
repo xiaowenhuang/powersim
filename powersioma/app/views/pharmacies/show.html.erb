@@ -1,35 +1,35 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>药店名:</b>
   <%= @pharmacy.name %>
 </p>
 
 <p>
-  <b>Reason:</b>
+  <b>原因:</b>
   <%= @pharmacy.reason %>
 </p>
 
 <p>
-  <b>Begin date:</b>
+  <b>受理日期:</b>
   <%= @pharmacy.begin_date %>
 </p>
 
 <p>
-  <b>End date:</b>
+  <b>终结日期:</b>
   <%= @pharmacy.end_date %>
 </p>
 
 <p>
-  <b>Phone:</b>
+  <b>联系电话或QQ:</b>
   <%= @pharmacy.phone %>
 </p>
 
 <p>
-  <b>Address:</b>
+  <b>联系地址:</b>
   <%= @pharmacy.address %>
 </p>
 
 
-<%= link_to 'Edit', edit_pharmacy_path(@pharmacy) %> |
-<%= link_to 'Back', pharmacies_path %>
+<%= link_to '修改', edit_pharmacy_path(@pharmacy) %> |
+<%= link_to '返回', pharmacies_path %>
