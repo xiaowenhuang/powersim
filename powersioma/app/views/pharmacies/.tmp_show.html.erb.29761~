@@ -11,11 +11,6 @@
 </p>
 
 <p>
-  <b>处理人：</b>
-  <%= @pharmacy.operator %>
-</p>
-
-<p>
   <b>受理日期:</b>
   <%= @pharmacy.begin_date %>
 </p>

@@ -1,12 +1,9 @@
-<div id="pharmacy">
-	
 <h1>运维主页</h1>
 
 <table>
   <tr>
     <th>药店名称</th>
     <th>原因</th>
-	<th>处理人</th>
     <th>受理日期</th>
     <th>终结日期</th>
     <th>联系电话、QQ</th>
@@ -19,8 +16,7 @@
 <% @pharmacies.each do |pharmacy| %>
   <tr>
     <td><%= pharmacy.name %></td>
-    <td class="list_description"><%= pharmacy.reason %></td>
-	<td><%= pharmacy.operator %></td>
+    <td><%= pharmacy.reason %></td>
     <td><%= pharmacy.begin_date %></td>
     <td><%= pharmacy.end_date %></td>
     <td><%= pharmacy.phone %></td>
@@ -31,7 +27,6 @@
   </tr>
 <% end %>
 </table>
-</div>
 
 <br />
 
