@@ -17,7 +17,7 @@
   </tr>
 
 <% @pharmacies.each do |pharmacy| %>
-  <tr>
+  <tr class="<%= cycle('list_line_odd','list_line_even') %> ">
     <td><%= pharmacy.name %></td>
     <td class="list_description"><%= pharmacy.reason %></td>
 	<td><%= pharmacy.operator %></td>

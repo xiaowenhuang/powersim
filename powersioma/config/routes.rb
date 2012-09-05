@@ -1,4 +1,6 @@
 Powersioma::Application.routes.draw do
+  resources :users
+
   resources :pharmacies
 
   # The priority is based upon order of creation:
