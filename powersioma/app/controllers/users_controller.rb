@@ -1,10 +1,11 @@
+#encoding: utf-8
 class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
-    @users = User.all
-
-    respond_to do |format|
+    @users = User.find(:all, :order=>:name)
+    
+    respond_to do|format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
     end
@@ -44,7 +45,8 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to(@user, :notice => 'User was successfully created.') }
+        flash[:notice]="用户名 #{@user.name}was successfully created."
+        format.html{redirect_to(:action=>'index')}
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
         format.html { render :action => "new" }
@@ -60,7 +62,8 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.update_attributes(params[:user])
-        format.html { redirect_to(@user, :notice => 'User was successfully updated.') }
+        flash[:notice]="User#{@user.name}was successfully updated."
+        format.html { redirect_to(:action=>'index') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

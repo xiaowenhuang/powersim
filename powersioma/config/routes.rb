@@ -1,4 +1,10 @@
 Powersioma::Application.routes.draw do
+  get "admins/login"
+
+  get "admins/logout"
+
+  get "admins/index"
+
   resources :users
 
   resources :pharmacies
