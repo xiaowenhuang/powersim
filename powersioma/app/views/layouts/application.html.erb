@@ -1,14 +1,33 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Powersioma</title>
-  <%= stylesheet_link_tag 'pharmacy' %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen" />
+  <title>创智医保问题受理系统</title>
 </head>
 <body>
+  <div class="page_wrap clearfix">
+  	<div class="top"></div>
+  	<div class="header">
+  		样式表来自于269页下的style.css<img src="images/tongue.gif" alt="" width="20" height="20" />
+  	</div>
+	<div class="container clearfix">
+		<div class="left_nav" id="nav">
+		<div class="left_nav_top"></div>
+		<ul>
+			<li><a href="http://pdms.powersi.com.cn:8080/index.aspx">[1] 创智管理平台 </a></li>
+			<li><a href="#">[2] 我的博客</a></li>
+			<li><a href="#">[3] 意见箱</a></li>
+			<li><a href="#">[4] 待定</a></li>
+		</ul>
+	</div>
 
 <%= yield %>
+</div>
+  <div class="bottom clearfix">
+  	<div class="footer clearfix">
+  		Copyright,powersi'xiaowen &nbsp;&#8226;&nbsp;Design by 小文</div>
+  </div>
 
 </body>
 </html>
