@@ -27,7 +27,7 @@
     <td><%= pharmacy.address %></td>
     <td><%= link_to '显示', pharmacy %></td>
     <td><%= link_to '修改', edit_pharmacy_path(pharmacy) %></td>
-    <td><%= link_to '删除', pharmacy,:confirm=>'are you sure?',:method=>:delete %></td>
+    <td><%= link_to '删除', pharmacy, :confirm => '你确定吗?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
