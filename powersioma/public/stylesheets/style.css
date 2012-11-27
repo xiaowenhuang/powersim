@@ -200,7 +200,7 @@ visibility: hidden;
 
 table 
 {
-  margin:auto;
+  margin:left;
   border: solid 1px #e8eef4;
   border-collapse: collapse;
 }

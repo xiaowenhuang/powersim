@@ -1,4 +1,13 @@
 class AdminsController < ApplicationController
+  
+ def index
+    @users=User.all
+    respond_to do|format|
+      format.html
+      format.xml{render :xml=>@users}
+    end
+  end
+  
   def login
     if request.post?
       user=User.authenticate(params[:name], params[:password])
@@ -12,9 +21,6 @@ class AdminsController < ApplicationController
   end
 
   def logout
-  end
-
-  def index
   end
 
 end
